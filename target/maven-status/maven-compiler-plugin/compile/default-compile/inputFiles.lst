@@ -1,4 +1,5 @@
 /Users/xiangruixiang/IdeaProjects/flink_java/src/main/java/com/zhixueyun/flink/bus/ETL/PersonActivity.java
+/Users/xiangruixiang/IdeaProjects/flink_java/src/main/java/com/zhixueyun/flink/bus/demo/SinkToMySQLDemo.java
 /Users/xiangruixiang/IdeaProjects/flink_java/src/main/java/com/zhixueyun/flink/bus/ETL/SinkToMySQL_JsonArray.java
 /Users/xiangruixiang/IdeaProjects/flink_java/src/main/java/com/zhixueyun/flink/bus/compute/Results.java
 /Users/xiangruixiang/IdeaProjects/flink_java/src/main/java/com/zhixueyun/flink/bus/compute/Employee.java
@@ -10,11 +11,14 @@
 /Users/xiangruixiang/IdeaProjects/flink_java/src/main/java/com/zhixueyun/flink/utils/DbUtils.java
 /Users/xiangruixiang/IdeaProjects/flink_java/src/main/java/com/zhixueyun/flink/bus/join/WaterAndWater/SinkToMySQL.java
 /Users/xiangruixiang/IdeaProjects/flink_java/src/main/java/com/zhixueyun/flink/bus/join/DimAndWater/Person.java
+/Users/xiangruixiang/IdeaProjects/flink_java/src/main/java/com/zhixueyun/flink/bus/demo/StudyProgress.java
 /Users/xiangruixiang/IdeaProjects/flink_java/src/main/java/com/zhixueyun/flink/bus/join/WaterAndWater/Person.java
 /Users/xiangruixiang/IdeaProjects/flink_java/src/main/java/com/zhixueyun/flink/bus/ETL/GetJsonArray.java
 /Users/xiangruixiang/IdeaProjects/flink_java/src/main/java/com/zhixueyun/flink/bus/join/WaterAndWater/ActivecPerson.java
 /Users/xiangruixiang/IdeaProjects/flink_java/src/main/java/com/zhixueyun/flink/bus/join/WaterAndWater/TableGetJsonArrayWaterWater.java
 /Users/xiangruixiang/IdeaProjects/flink_java/src/main/java/com/zhixueyun/flink/bus/join/DimAndWater/Employ.java
+/Users/xiangruixiang/IdeaProjects/flink_java/src/main/java/com/zhixueyun/flink/bus/demo/GroupByStudyTime.java
+/Users/xiangruixiang/IdeaProjects/flink_java/src/main/java/com/zhixueyun/flink/bus/demo/Results.java
 /Users/xiangruixiang/IdeaProjects/flink_java/src/main/java/com/zhixueyun/flink/bus/compute/GroupBySalary.java
 /Users/xiangruixiang/IdeaProjects/flink_java/src/main/java/com/zhixueyun/flink/bus/join/DimAndWater/PersonInfo.java
 /Users/xiangruixiang/IdeaProjects/flink_java/src/main/java/com/zhixueyun/flink/bus/compute/SinkToMySQL_MyActivity.java

@@ -106,7 +106,7 @@ public class GroupBySalary {
         streamExecutionEnvironment.setStreamTimeCharacteristic(TimeCharacteristic.ProcessingTime);
 
         //kafka参数配置
-        Properties prop = KafkaConfigUtil.buildKafkaProps();//kafka参数配置
+        Properties prop = KafkaConfigUtil.buildKafkaProps(args[0]);//kafka参数配置
 
         //配置消费者
         FlinkKafkaConsumer<String> consumer = new FlinkKafkaConsumer<String>(topic, new SimpleStringSchema(), prop);

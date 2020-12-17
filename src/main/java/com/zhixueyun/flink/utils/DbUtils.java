@@ -14,7 +14,7 @@ public class DbUtils {
         dataSource.setDriverClassName("com.mysql.jdbc.Driver");
         dataSource.setUrl("jdbc:mysql://192.168.0.53:3306/dev?characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=Asia/Shanghai");
         //
-       // dataSource.setUrl("jdbc:mysql://121.43.235.134:3306/dev?characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=Asia/Shanghai");
+        //dataSource.setUrl("jdbc:mysql://121.43.235.134:3306/dev?characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=Asia/Shanghai");
         dataSource.setUsername("root");
         dataSource.setPassword("Xiang987");
         //设置初始化连接数，最大连接数，最小闲置数

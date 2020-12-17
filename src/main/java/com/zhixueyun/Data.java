@@ -15,17 +15,74 @@ import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
+import static com.ibm.icu.impl.ClassLoaderUtil.getClassLoader;
+
 public class Data {
 
     public static void main(String[] args) {
 
+        Properties properties = new Properties();
+        String filePath = args[0];
+
+        // 使用InPutStream流读取properties文件
+        BufferedReader bufferedReader ;
+        try {
+            bufferedReader = new BufferedReader(new FileReader(filePath));
+            properties.load(bufferedReader);
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        // 获取key对应的value值
+        System.out.println(properties.getProperty("aa"));
+
+
+       // System.out.println(PropertiesCfg.get("aa"));
+
+       /*
         try {
             //指定路径中的文件
             display("/usr/local/java.txt");
         } catch (Exception e) {
             e.printStackTrace();
         }
+        */
+
+        //创建Properties对象
+
+
     }
+
+
+    public static class PropertiesCfg {
+
+        //配置文件所在目录路径，相对项目根目录，如果是放在根目录下，直接写文件名称就行
+        private final static String file = "aa.properties";
+        private final static Properties properties = new Properties();
+
+        static {
+            try {
+                properties.load(new InputStreamReader(ClassLoader.getSystemResourceAsStream(file), "utf-8"));
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+
+        //根据key获取值
+        public static String get(String key) {
+            return properties.getProperty(key).trim();
+        }
+
+        //根据key获取值，值为空则返回defaultValue
+        public static String get(String key, String defaultValue) {
+            return properties.getProperty(key, defaultValue);
+        }
+    }
+
+
+
 
     public static void display(String path)throws Exception{
             File file=new File(path);

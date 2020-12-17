@@ -10,16 +10,14 @@ import java.util.Properties;
 
 public class KafkaConfigUtil {
 
+    public static Properties buildKafkaProps(String filePath){
 
+         Properties pro = PropertiesUtils.properties(filePath);
 
-   //static String ZOOKEEPER_HOST = "121.40.93.179:2181,121.43.235.134:2181,120.26.38.159:2181";
-  // static String KAFKA_BROKER = "121.40.93.179:9092,121.43.235.134:9092,120.26.38.159:9092";
+         String ZOOKEEPER_HOST = pro.getProperty("ZOOKEEPER_HOST");
+         String KAFKA_BROKER = pro.getProperty("KAFKA_BROKER");
+         String TRANSACTION_GROUP = pro.getProperty("TRANSACTION_GROUP");
 
-    static String ZOOKEEPER_HOST = "192.168.0.52:2181,192.168.0.53:2181,192.168.0.54:2181";
-    static String KAFKA_BROKER = "192.168.0.52:9092,192.168.0.53:9092,192.168.0.54:9092";
-    static String TRANSACTION_GROUP = "transactiona1";
-
-    public static Properties buildKafkaProps(){
         Properties properties = new Properties();
         properties.setProperty(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG, KAFKA_BROKER);
         properties.setProperty("zookeeper.connect", ZOOKEEPER_HOST);
@@ -40,4 +38,6 @@ public class KafkaConfigUtil {
         System.out.println("get kafka config, config map-> " + properties.toString());
         return properties;
     }
+
+
 }

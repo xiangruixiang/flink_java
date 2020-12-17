@@ -77,7 +77,7 @@ public class TableGetJsonArrayWaterWater {
         streamExecutionEnvironment.setStreamTimeCharacteristic(TimeCharacteristic.EventTime);
 
         //kafka参数配置
-        Properties prop = KafkaConfigUtil.buildKafkaProps();//kafka参数配置
+        Properties prop = KafkaConfigUtil.buildKafkaProps(args[0]);//kafka参数配置
 
 
         ///////////////////////////////////////////////
